@@ -78,5 +78,18 @@
 }
 
 .circle:hover{
-    background-color:rgb(19,175,227);
+    animation-name: hovering;
+    animation-duration: 300ms;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+}
+
+@keyframes hovering {
+    0%{
+        background-color: #505050;
+    }
+    100%{
+        background-color: #d7d707;
+    }
+    
 }

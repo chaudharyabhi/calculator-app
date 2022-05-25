@@ -6,50 +6,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
 </head>
 <body>
 
     <div class="calc">
         <div class="screen">
-            <div class="input">
+            <div class="input">0
             </div>
             <div class="output"></div>
         </div>
 
         <div class="main">
-            <div class="circle zero grey">AC</div>
-            <div class="circle grey">%</div>
-            <div class="circle orange">/</div>
+            <div id="reset" class="circle zero grey">AC</div>
+            <div class="circle grey percentage">%</div>
+            <div class="circle orange divide">/</div>
         </div>
 
         <div class="main">
-            <div class="circle">7</div>
-            <div class="circle">8</div>
-            <div class="circle">9</div>
-            <div class="circle orange">*</div>
+            <div class="circle number">7</div>
+            <div class="circle number">8</div>
+            <div class="circle number">9</div>
+            <div class="circle orange multiply">*</div>
         </div>
 
         <div class="main">
-            <div class="circle">5</div>
-            <div class="circle">6</div>
-            <div class="circle">7</div>
-            <div class="circle orange">-</div>
+            <div class="circle number">4</div>
+            <div class="circle number">5</div>
+            <div class="circle number">6</div>
+            <div class="circle orange subtract">-</div>
         </div>
 
         <div class="main">
-            <div class="circle">1</div>
-            <div class="circle">2</div>
-            <div class="circle">3</div>
-            <div class="circle orange">+</div>
+            <div class="circle number">1</div>
+            <div class="circle number">2</div>
+            <div class="circle number">3</div>
+            <div class="circle orange add">+</div>
         </div>
 
         <div class="main">
-            <div class="circle zero">0</div>
-            <div class="circle">.</div>
-            <div class="circle orange">=</div>
+            <div class="circle zero number">0</div>
+            <div class="circle number">.</div>
+            <div id="equal" class="circle orange">=</div>
         </div>
     </div>
 
-    <script src="./script.js"></script>
 </body>
 </html>
