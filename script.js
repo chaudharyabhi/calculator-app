@@ -33,7 +33,6 @@ const operation = (sign) => {
     }
     inputDiv.innerText = "";
     operator = sign;
-    console.log(operator);
   }
 };
 
@@ -62,7 +61,8 @@ let equals = document.querySelector("#equal");
 
 equals.addEventListener("click", function () {
   let lastEntry = parseFloat(inputDiv.innerText);
-  if (inputDiv.innerText == "") {
+
+  if (inputDiv.innerText == "" || store === 0 || operator === "") {
     return;
   } else if (operator == "+") {
     add.style.backgroundColor = "#FF9500";
@@ -77,6 +77,7 @@ equals.addEventListener("click", function () {
     divide.style.backgroundColor = "#FF9500";
     store = store / lastEntry;
   }
+
   inputDiv.innerText = store;
   operator = "";
   outputDiv.innerText = "";
