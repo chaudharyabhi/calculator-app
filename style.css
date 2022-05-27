@@ -5,7 +5,10 @@
     font-size: 35px;
 }
 
-
+body{
+    height: 100vh;
+    background-image:linear-gradient(rgba(22, 167, 27, 0.329), rgb(24 56 52));
+}
 
 .calc{
     width: 240px;
@@ -31,6 +34,8 @@
     text-align: unset;
     padding-top: 80px;
     padding-right: 10px;
+    /* text-overflow: ellipsis; */
+    overflow: hidden;
 }
 
 .output{
