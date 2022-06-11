@@ -17,6 +17,7 @@ body{
     border-radius: 25px;
     overflow: hidden;
     margin: auto;
+    margin-top: 50px;
 }
 
 .calc .screen{
